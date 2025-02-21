@@ -25,6 +25,6 @@ jobs:
       - name: Logearnos en GHCR
         run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u Jeanpierre-Salazar-Cossio --password-stdin
       - name: Crear imagen
-        run: docker build . -t ghcr.io/Jeanpierre-Salazar-Cossio/express-image:latest
+        run: docker build . -t ghcr.io/jeanpierre-salazar-cossio/express-image:latest
       - name: Desplegar imagen
-        run: docker push ghcr.io/Jeanpierre-Salazar-Cossio/express-image:latest
+        run: docker push ghcr.io/jeanpierre-salazar-cossio/express-image:latest
